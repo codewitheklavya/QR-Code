@@ -12,6 +12,10 @@ function generateQR(){
             qrText.classList.remove("error");
         }, 1000);
     }
- 
 }
+qrText.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    generateQR();
+  }
+});
 
